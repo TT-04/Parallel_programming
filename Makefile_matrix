@@ -1,0 +1,5 @@
+ultra.exe: ultra_m.c
+	mpicc ultra_m.c -o ul
+	mpirun -np 6 ./ul	
+clean:
+	rm ./ul

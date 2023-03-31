@@ -1,0 +1,5 @@
+pi_calc.exe: pi_calc.c
+	mpicc pi_calc.c -o pi
+	mpirun -np 7 ./pi	
+clean:
+	rm ./pi

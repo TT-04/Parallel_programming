@@ -1,0 +1,5 @@
+time.exe: task3.c
+	mpicc task3.c -o time
+	mpirun -np 2 ./time	
+clean:
+	rm ./time
